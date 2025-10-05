@@ -38,6 +38,9 @@ fn main() {
             commands::blockchain::init_blockchain_command,
             commands::blockchain::add_block_command,
             commands::blockchain::get_blocks_command,
+            commands::sql::execute_sql_query,
+            commands::sql::export_to_csv,
+            commands::sql::export_to_json,
         ])
         .setup({
             let python_server = Arc::clone(&python_server);

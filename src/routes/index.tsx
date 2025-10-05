@@ -9,6 +9,7 @@ import TauriModule from '@/modules/tauri';
 import ToolsModule from '@/modules/tools';
 import BlockchainModule from '@/modules/blockchain';
 import ErrorPage from '@/pages/error';
+import SQLPlayground from '@/modules/sql';
 
 export const routers: RouteObject[] = [
   {
@@ -26,6 +27,10 @@ export const routers: RouteObject[] = [
       {
         path: 'dictionary',
         element: <DictionaryPage />,
+      },
+      {
+        path: 'sql-playground',
+        element: <SQLPlayground />,
       },
     ],
   },
