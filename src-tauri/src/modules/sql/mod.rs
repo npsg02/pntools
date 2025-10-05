@@ -1,5 +1,5 @@
 use serde::{Deserialize, Serialize};
-use tokio_postgres::{Error, NoTls, Row};
+use tokio_postgres::{Error, NoTls};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct QueryResult {
