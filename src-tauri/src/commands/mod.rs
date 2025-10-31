@@ -1,5 +1,6 @@
 use crate::db;
 pub mod blockchain;
+pub mod sql;
 #[tauri::command]
 pub fn greet(name: &str) -> String {
     println!("Hello, {}!", name);
