@@ -8,6 +8,7 @@ import { RouteObject } from 'react-router-dom';
 import ModuleLayout from '@/components/ModuleLayout';
 import TauriStorage from './components/storage';
 import TauriImage from './components/image';
+import TauriBrowser from './components/browser';
 
 const TauriModule: RouteObject = {
   path: 'tauri',
@@ -28,6 +29,10 @@ const TauriModule: RouteObject = {
     {
       path: 'Image',
       element: <TauriImage />,
+    },
+    {
+      path: 'Browser',
+      element: <TauriBrowser />,
     },
   ],
 };
